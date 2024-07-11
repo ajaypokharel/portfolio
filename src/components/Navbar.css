@@ -1,0 +1,32 @@
+.navbar {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(55, 55, 55, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon {
+    padding: 8px;
+    margin: 0 12px;
+    font-size: 24px;
+    color: #ddd; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-icon:hover, .nav-icon.active {
+    transform: translateY(-5px);
+    color: #04c2c9;
+}
