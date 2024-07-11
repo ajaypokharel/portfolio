@@ -4,16 +4,6 @@ import './About.css';
 import ajay_pic from '../assets/ajay_pic.jpeg'
 
 const About = () => {
-  const listVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-        opacity: 1,
-        transition: {
-            delay: 0.3,
-            duration: 0.5
-        }
-    }
-};
   const aboutVariants = {
     offscreen: { y: 30, opacity: 0 },
     onscreen: {
@@ -49,16 +39,6 @@ const About = () => {
           alt="Ajay Pokharel"
           variants={aboutVariants}
         />
-        <motion.div variants={aboutVariants} className="interests-container">
-            <h3 className="interests-heading">Interests</h3>
-            <motion.div className="interests-list-container">
-                <motion.ul variants={listVariants} className="interests-list">
-                    <motion.li variants={listVariants}><span className="blue-text">Web Dev</span></motion.li>
-                    <motion.li variants={listVariants}><span className="blue-text">AI/ML & Data</span></motion.li>
-                    <motion.li variants={listVariants}><span className="blue-text">App Dev</span></motion.li>
-                </motion.ul>
-            </motion.div>
-        </motion.div>
       </motion.div>
     </section>
   );
